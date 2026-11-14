@@ -33,12 +33,15 @@ Every real engineering task starts in version control. Working in one repository
 Check how much RAM your machine really has so you can confirm it meets the 8 GB minimum.
 Requirement: computer with 8 GB RAM minimum (Windows or macOS both work)
   - Linux / WSL:
+    
 free -h
 
  - macOS (prints bytes; 8 GB = 8589934592):
+   
 sysctl -n hw.memsize
 
  - Windows PowerShell:
+   
  (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB
 
 
