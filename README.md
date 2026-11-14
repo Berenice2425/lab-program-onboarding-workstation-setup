@@ -32,7 +32,9 @@ Every real engineering task starts in version control. Working in one repository
 
 Check how much RAM your machine really has so you can confirm it meets the 8 GB minimum.
 Requirement: computer with 8 GB RAM minimum (Windows or macOS both work)
-  - Linux / WSL:
+
+~~~
+ - Linux / WSL:
     
 free -h
 
@@ -40,12 +42,13 @@ free -h
    
 sysctl -n hw.memsize
 
- - Windows PowerShell:
+  - Windows PowerShell:
    
  (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB
+~~~
 
 
-Labs, browsers, terminals and containers run more smoothly with at least 8 GB of RAM. Instead of just printing a message, this step reads the real total memory: on Linux or WSL, free -h shows memory in human-readable units; on macOS, sysctl -n hw.memsize prints it in bytes; on Windows PowerShell, Get-CimInstance Win32_ComputerSystem reports TotalPhysicalMemory. Compare the result with the 8 GB minimum. Windows or macOS are both fine for the course.~~~
+Labs, browsers, terminals and containers run more smoothly with at least 8 GB of RAM. Instead of just printing a message, this step reads the real total memory: on Linux or WSL, free -h shows memory in human-readable units; on macOS, sysctl -n hw.memsize prints it in bytes; on Windows PowerShell, Get-CimInstance Win32_ComputerSystem reports TotalPhysicalMemory. Compare the result with the 8 GB minimum. Windows or macOS are both fine for the course.
 
 📘Create Your Azure Free Trial Account.
 
@@ -54,6 +57,7 @@ Azure is Microsoft's cloud platform, and a free account gives new users a credit
 You will use the Azure Portal and Azure CLI throughout the program to deploy real cloud resources.
 
 📘Set Up Your Dev.to Account for Assignments.
+
 <img width="646" height="179" alt="{10F214AA-6DC0-4B3D-8D9C-9BC29B93E940}" src="https://github.com/user-attachments/assets/4c485ce3-cde3-4404-a604-61cf49bebdfd" />
 
 Establishe your public developer blog on Dev.to where you will publish your program assignments.
